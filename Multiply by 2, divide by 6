@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+	long long t,n;
+	cin >> t;
+	while(t--){
+		int sum=0;
+		cin >> n;
+		if (n == 1){
+			sum = 0;
+			cout << sum<< endl;
+			continue;
+		}
+		if( n % 3 != 0){
+			sum = -1;
+			cout << sum<<endl;
+			continue;
+ 
+		}
+		while(n != 1){
+			if( n% 3 != 0){
+				cout<< -1 << endl;
+				break;
+			}
+			if( n % 6 == 0){
+				n =n/ 6;
+				sum++;
+				continue;
+			}
+			else{
+				n =n*2;
+				sum++;
+				continue;
+			}
+ 
+		}
+		if(n == 1){
+			cout<<sum << endl;
+		}
+		
+		
+	}
+	
+}
