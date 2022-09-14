@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int a[5][5], sum = 0, m, n, c1, c2;
+	for(int i = 0; i < 5; i++){
+		for(int j = 0; j < 5; j++){
+			cin >> a[i][j];
+			sum += a[i][j];
+			if( sum == 1){
+				m = i; //cout<<m<< endl;
+				n = j;
+				sum++;
+				break;
+			}
+		}
+	}
+	c1 = max(m , 2) - min( m ,2);
+	c2 = max(n , 2) - min( n, 2);
+	cout << (c1+ c2)<<endl;
+ 
+} 
