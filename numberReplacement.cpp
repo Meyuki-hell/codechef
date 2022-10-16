@@ -75,8 +75,7 @@ In the third test case we can choose the number 11 and the letter a, after that 
 
 In the fifth test case we can change all numbers one by one to the letter a.*/
 #include<bits/stdc++.h>
-//#include <cstring>
-//#include <iostream>
+
 using namespace std;
 int numberReplacement(int a[],char ca[],int m){
     int l = 0, o=-23;
